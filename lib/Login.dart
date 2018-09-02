@@ -4,23 +4,22 @@ import 'package:productivity/button.dart';
 class Login extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+
     return new Scaffold(
       appBar: AppBar(
         elevation: 10.0,
         title: Text("Login"),
       ),
+
       body: new Stack(
         children: <Widget>[
-
           new Container(
-              height: 560.0,
-              width: 360.0,
               decoration: new BoxDecoration(
-                image: new DecorationImage(
-                  image: new AssetImage("assets/icons/fundo.jpeg"),
-                  fit: BoxFit.cover,
-                ),
-              ),
+      image: new DecorationImage(
+          image: new AssetImage("assets/icons/fundo.jpeg"),
+      fit: BoxFit.cover,
+    ),
+    ),
               child: new Container(
                 padding: new EdgeInsets.all(20.0),
                 margin: new EdgeInsets.only(
@@ -112,15 +111,19 @@ class Login extends StatelessWidget {
                 image: new AssetImage("assets/icons/login.png"),
                 height: 110.0,
                 width: 110.0,
-                fit: BoxFit.cover,
                 alignment: new Alignment(0.0, -1.0),
               )),
+          new Container(
+            alignment: new Alignment(0.0, 0.8),
+              child: new Button('Begin Journey')
+
+          )
+
 
 
         ],
       ),
 
-      floatingActionButton: new Button("Begin Journey")
     );
   }
 }

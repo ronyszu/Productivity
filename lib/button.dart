@@ -19,9 +19,9 @@ class Button extends StatelessWidget {
         decoration: new BoxDecoration(
           color: new Color(0xFF333366),
           shape: BoxShape.rectangle,
-          borderRadius: new BorderRadius.circular(10.0),
+          borderRadius: new BorderRadius.circular(20.0),
           boxShadow: <BoxShadow>[
-            new BoxShadow(
+        new BoxShadow(
               color: Colors.black12,
               blurRadius: 0.0,
               offset: new Offset(0.0, 5.0),
@@ -34,8 +34,8 @@ class Button extends StatelessWidget {
                 left: 10.0,
                 right: 10.0,
               ),
-              height: 70.0,
-              width: 280.0,
+              height: 60.0,
+              width: 320.0,
               child: new Center(
                   child: new RaisedButton(
                       color: new Color(0xFF333366),

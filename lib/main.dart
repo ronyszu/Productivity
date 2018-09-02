@@ -5,6 +5,7 @@ import 'package:productivity/Login.dart';
 //import 'package:flutter/animation.dart';
 import 'package:productivity/drawer.dart';
 import 'package:productivity/button.dart';
+import 'package:productivity/UserData.dart';
 
 void main() {
   runApp(new MaterialApp(
@@ -13,6 +14,7 @@ void main() {
     routes: {
       '/': (context) => MyApp(),
       '/login': (context) => Login(),
+      '/begin journey':(context) => UserData(),
     },
   ));
 }
@@ -26,6 +28,7 @@ class MyApp extends StatelessWidget {
       home: new MyHomePage(title: 'Productivity'),
       routes: {
         '/login': (context) => Login(),
+        '/begin journey':(context) => UserData(),
       },
       theme: new ThemeData(
         primarySwatch: Colors.indigo,
@@ -79,7 +82,7 @@ class _MyHomePageState extends State<MyHomePage> {
                             image: new AssetImage("assets/icons/pins.png"),
                           )),
                 new Column(
-                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: <Widget>[
                       Button("Login"),
                       new Container(
